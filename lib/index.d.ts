@@ -20,6 +20,7 @@ interface schema {
   cookies?: object;
   signedCookies?: object;
   body?: object;
+  session?: object;
 }
 
 interface errors {
@@ -29,6 +30,7 @@ interface errors {
   cookies?: JoiError[];
   signedCookies?: JoiError[];
   body?: JoiError[];
+  session?: JoiError[];
 }
 
 export declare const Joi: joiRoot;
